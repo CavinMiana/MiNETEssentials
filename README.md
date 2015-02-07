@@ -1,6 +1,4 @@
-# MiNETEssentials
-A Essentials Plugin for MiNET
-MiNETEssentials [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/MiNETCN?utm_source=share-link&utm_medium=link&utm_campaign=share-link)
+MiNETEssentials [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/MiNETCN?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ================
 
 The port version of [Bukkit Essentials](http://dev.bukkit.org/bukkit-plugins/essentials/) for [MiNET](https://github.com/NiclasOlofsson/MiNET).
