@@ -5,10 +5,10 @@ using MiNET.PluginSystem.Attributes;
 
 namespace MiNETEssentials
 {
+    [Plugin("MiNETEssentials", "A Essentials Plugin for MiNET", "Build 1", "MiNETCN")]
+    
     public class MiNETEssentials : MiNETPlugin
     {
-        [Plugin("MiNETEssentials", "A Essentials Plugin for MiNET", "Build 1", "MiNETCN")]
-
         /* 
               _Target:__________________________________________________________________________________________State:________
               |1、Player made homes, and server warps.                                                        |____SetHome___|
