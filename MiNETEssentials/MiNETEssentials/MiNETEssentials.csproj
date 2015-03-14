@@ -34,7 +34,10 @@
       <HintPath>..\..\..\..\VS2013\MiNET-master\src\MiNET\MiNET.Service\bin\Release\Craft.Net.Common.dll</HintPath>
     </Reference>
     <Reference Include="MiNET">
-      <HintPath>..\..\..\..\VS2013\MiNET-master\src\MiNET\MiNET.Service\bin\Release\MiNET.dll</HintPath>
+      <HintPath>..\..\..\MiNET\src\MiNET\MiNET\bin\Debug\MiNET.dll</HintPath>
+    </Reference>
+    <Reference Include="MiNETServer">
+      <HintPath>..\..\..\..\新建文件夹\MiNETServer\MiNETServer\MiNETServer\bin\Release\MiNETServer.exe</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -45,6 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Command\Home.cs" />
+    <Compile Include="SetPacket\PlayerJoin.cs" />
+    <Compile Include="SetPacket\Massage.cs" />
     <Compile Include="MiNETEssentials.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
