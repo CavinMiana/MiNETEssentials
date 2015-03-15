@@ -28,11 +28,11 @@ namespace MiNETEssentials
     {
         protected override void OnEnable()
         {
-            CMDColor.INFO("MiNETEssentials已加载");
+            CMDColor.INFO("MiNETEssentials OnEnable");
         }
         public override void OnDisable()
         {
-            CMDColor.Warning("MiNETEssentials已卸载");
+            CMDColor.Warning("MiNETEssentials Disable");
         }
     }
 }

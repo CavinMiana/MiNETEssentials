@@ -28,10 +28,5 @@ namespace MiNETEssentials.Command
 
             }
         }
-        private bool IsTarget(Player target)
-        {
-            return false;
-        }
-
     }
 }

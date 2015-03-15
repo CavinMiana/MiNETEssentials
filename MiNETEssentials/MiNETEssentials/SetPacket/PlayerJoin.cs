@@ -19,16 +19,8 @@ namespace MiNETEssentials.Functions
         [PacketHandler]
         public Package playerjoin(Player player,McpeLogin login)
         {
-            CMDColor.INFO("玩家:" + login.username + ",加入了游戏,IP:" + player.EndPoint.Address);
+            CMDColor.INFO("player:" + login.username + ",join game,IP:" + player.EndPoint.Address);
             return login;
-        }
-        public Package kit(McpeAddPlayer adp,Player player)
-        {
-            if (adp.username == player.Username)
-            {
-                
-            }
-            return adp;
         }
     }
 }
