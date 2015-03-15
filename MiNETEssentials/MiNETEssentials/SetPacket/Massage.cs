@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace MiNETEssentials.Functions
 {
-    //this is show player massage in the console
+    //Full chat and nickname customisation 
     public class Massage : Plugin
     {
         [PacketHandler]

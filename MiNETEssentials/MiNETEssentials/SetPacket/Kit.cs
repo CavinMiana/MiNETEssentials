@@ -14,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace MiNETEssentials.SetPacket
 {
-    //this set a kit when player join the game
+    //Player kits and first join kits     
     class Kit : Plugin
     {
         [PacketHandler]

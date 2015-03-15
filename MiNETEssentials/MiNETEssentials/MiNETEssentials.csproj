@@ -49,11 +49,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Command\Home.cs" />
+    <Compile Include="Command\Teleport.cs" />
     <Compile Include="SetPacket\Kit.cs" />
     <Compile Include="SetPacket\PlayerJoin.cs" />
     <Compile Include="SetPacket\Massage.cs" />
     <Compile Include="MiNETEssentials.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Economy\" />
+    <Folder Include="Protection\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
