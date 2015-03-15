@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Command\Home.cs" />
+    <Compile Include="SetPacket\Kit.cs" />
     <Compile Include="SetPacket\PlayerJoin.cs" />
     <Compile Include="SetPacket\Massage.cs" />
     <Compile Include="MiNETEssentials.cs" />

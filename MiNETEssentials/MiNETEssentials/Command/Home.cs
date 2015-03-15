@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 
 namespace MiNETEssentials.Command
 {
+    //you konw,just set home and back home
     public class Home:Plugin
     {
         [Command(Command = "sethome", Description = "Set a spawn point for level", Usage = "/sethome [target/x,y,z/none]", Permission = "MiNETEssentials.SetHome")]

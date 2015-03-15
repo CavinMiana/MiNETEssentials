@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 
 namespace MiNETEssentials.Functions
 {
+    //this is show player join game in the console
     public class PlayerJoin : Plugin
     {
         [PacketHandler]

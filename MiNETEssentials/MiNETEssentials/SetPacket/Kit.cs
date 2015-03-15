@@ -12,16 +12,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MiNETEssentials.Functions
+namespace MiNETEssentials.SetPacket
 {
-    //this is show player massage in the console
-    public class Massage : Plugin
+    //this set a kit when player join the game
+    class Kit : Plugin
     {
         [PacketHandler]
-        public Package message(McpeMessage message, Player player)
+        public Package kit(McpeAddPlayer addPlayer)
         {
-            CMDColor.INFO("<" + player.Username + ">:" + message.message);
-            return message;
+            return addPlayer;
         }
     }
 }
