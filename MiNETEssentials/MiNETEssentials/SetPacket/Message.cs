@@ -15,12 +15,14 @@ using System.Threading.Tasks;
 namespace MiNETEssentials.Functions
 {
     //Full chat and nickname customisation 
-    public class Massage : Plugin
+    public class Message : Plugin
     {
         [PacketHandler]
         public Package message(McpeMessage message, Player player)
         {
             CMDColor.INFO("<" + player.Username + ">:" + message.message);
+
+                MiNETEssentials.SavePlayerConfig();
             return message;
         }
     }

@@ -31,13 +31,19 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Craft.Net.Common">
-      <HintPath>..\..\..\..\VS2013\MiNET-master\src\MiNET\MiNET.Service\bin\Release\Craft.Net.Common.dll</HintPath>
+      <HintPath>F:\Github Projects\MiNETServer\MiNETServer\bin\Release\Craft.Net.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="MiNET">
-      <HintPath>..\..\..\MiNET\src\MiNET\MiNET\bin\Debug\MiNET.dll</HintPath>
+      <HintPath>F:\Github Projects\MiNETServer\MiNETServer\bin\Release\MiNET.dll</HintPath>
     </Reference>
     <Reference Include="MiNETServer">
-      <HintPath>..\..\..\..\新建文件夹\MiNETServer\MiNETServer\MiNETServer\bin\Release\MiNETServer.exe</HintPath>
+      <HintPath>F:\Github Projects\MiNETServer\MiNETServer\bin\Release\MiNETServer.exe</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -52,7 +58,7 @@
     <Compile Include="Command\Teleport.cs" />
     <Compile Include="SetPacket\Kit.cs" />
     <Compile Include="SetPacket\PlayerJoin.cs" />
-    <Compile Include="SetPacket\Massage.cs" />
+    <Compile Include="SetPacket\Message.cs" />
     <Compile Include="MiNETEssentials.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,7 +66,13 @@
     <Folder Include="Economy\" />
     <Folder Include="Protection\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>xcopy "$(TargetPath)" "$(TargetDir)Plugins\" /Y /I</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

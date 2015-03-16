@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 
 namespace MiNETEssentials.Functions
 {
@@ -18,9 +19,23 @@ namespace MiNETEssentials.Functions
     public class PlayerJoin : Plugin
     {
         [PacketHandler]
-        public Package playerjoin(Player player,McpeLogin login)
+        public Package PlayerJoinPacket(McpeLogin login, Player player)
         {
-            CMDColor.INFO("player:" + login.username + ",join game,IP:" + player.EndPoint.Address);
+            if (!MiNETEssentials.playerConfig.ContainsKey(login.username))
+            {
+                JObject obj = new JObject();
+                obj["username"] = login.username;
+                obj["lastjoin"] = DateTime.Now.ToShortDateString() + " " + DateTime.Now.ToShortTimeString();
+
+                MiNETEssentials.playerConfig.Add(login.username, obj);
+
+                MiNETEssentials.SavePlayerConfig();
+
+                Console.WriteLine(login.username + " has joined for the first time!");
+            }
+            else
+                Console.WriteLine(login.username + " has joined! Last joined: " + (string)MiNETEssentials.playerConfig[login.username]["lastjoin"]);
+
             return login;
         }
     }
