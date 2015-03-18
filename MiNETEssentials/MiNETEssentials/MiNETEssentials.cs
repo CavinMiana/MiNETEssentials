@@ -5,8 +5,8 @@ using MiNET.Utils;
 using MiNET.Worlds;
 using MiNET.Plugins;
 using MiNETEssentials;
+using log4net;
 using MiNET.Plugins.Attributes;
-using MiNETCNServer;
 using Newtonsoft.Json.Linq;
 using System.Collections.Generic;
 using System.IO;
@@ -17,6 +17,7 @@ namespace MiNETEssentials
     [Plugin(PluginName = "MiNETEssentials", Description = "a basic plugin for MiNET", Author = "MiNETCN", PluginVersion = "0.0.1")]
     public class MiNETEssentials : Plugin
     {
+        public static readonly ILog Log = LogManager.GetLogger(typeof(MiNETEssentials));
         public static JObject config;
         public static Dictionary<string, JObject> playerConfig = new Dictionary<string, JObject>();
 
@@ -29,10 +30,9 @@ namespace MiNETEssentials
             }
             File.WriteAllText("Plugins/minetessentials/players.json", obj.ToString());
         }
-
         protected override void OnEnable()
         {
-            CMDColor.INFO("MiNETEssentials OnEnable");
+            Log.Info("MiNETEssentials OnEnable");
 
             if (!Directory.Exists("Plugins/minetessentials"))
                 Directory.CreateDirectory("Plugins/minetessentials");
@@ -53,7 +53,7 @@ namespace MiNETEssentials
         }
         public override void OnDisable()
         {
-            CMDColor.Warning("MiNETEssentials Disable");
+            Log.Warn("MiNETEssentials Disable");
         }
     }
 }

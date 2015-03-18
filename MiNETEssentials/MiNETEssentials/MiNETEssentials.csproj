@@ -30,17 +30,43 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Craft.Net.Common">
-      <HintPath>F:\Github Projects\MiNETServer\MiNETServer\bin\Release\Craft.Net.Common.dll</HintPath>
+    <Reference Include="Craft.Net.Anvil, Version=1.0.275.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MiNET.1.0.275.0\lib\net45\Craft.Net.Anvil.dll</HintPath>
+    </Reference>
+    <Reference Include="Craft.Net.Common, Version=1.0.275.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MiNET.1.0.275.0\lib\net45\Craft.Net.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Craft.Net.TerrainGeneration, Version=1.0.275.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MiNET.1.0.275.0\lib\net45\Craft.Net.TerrainGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="Deedle">
+      <HintPath>..\packages\Deedle.1.0.7\lib\net40\Deedle.dll</HintPath>
+    </Reference>
+    <Reference Include="fNbt, Version=0.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MiNET.1.0.275.0\lib\net45\fNbt.dll</HintPath>
+    </Reference>
+    <Reference Include="LibNoise, Version=0.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\LibNoise.0.2\lib\NET45\LibNoise.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.3\lib\net40-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="MiNET">
-      <HintPath>F:\Github Projects\MiNETServer\MiNETServer\bin\Release\MiNET.dll</HintPath>
-    </Reference>
-    <Reference Include="MiNETServer">
-      <HintPath>F:\Github Projects\MiNETServer\MiNETServer\bin\Release\MiNETServer.exe</HintPath>
+    <Reference Include="MiNET, Version=1.0.275.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\MiNET.1.0.275.0\lib\net45\MiNET.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -68,6 +94,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MCPE Protocol.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

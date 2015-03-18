@@ -6,14 +6,14 @@ using MiNET.Worlds;
 using MiNET.Plugins;
 using MiNETEssentials;
 using MiNET.Plugins.Attributes;
-using MiNETCNServer;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 
-namespace MiNETEssentials.Functions
+namespace MiNETEssentials.SetPacket
 {
     //this is show player join game in the console
     public class PlayerJoin : Plugin
@@ -31,10 +31,10 @@ namespace MiNETEssentials.Functions
 
                 MiNETEssentials.SavePlayerConfig();
 
-                Console.WriteLine(login.username + " has joined for the first time!");
+                MiNETEssentials.Log.Info(login.username + " has joined for the first time!");
             }
             else
-                Console.WriteLine(login.username + " has joined! Last joined: " + (string)MiNETEssentials.playerConfig[login.username]["lastjoin"]);
+                MiNETEssentials.Log.Info(login.username + " has joined! Last joined: " + (string)MiNETEssentials.playerConfig[login.username]["lastjoin"]);
 
             return login;
         }
