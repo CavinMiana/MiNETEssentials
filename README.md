@@ -1,9 +1,9 @@
 MiNETEssentials [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/MiNETCN?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 ================
 
-The port version of [Bukkit Essentials](http://dev.bukkit.org/bukkit-plugins/essentials/) for [MiNETCNServer](https://github.com/FDKPIBC/MiNETSerever).
+The port version of [Bukkit Essentials](http://dev.bukkit.org/bukkit-plugins/essentials/) for [MiNET](https://github.com/NiclasOlofsson/MiNET).
 
-**Remember that we will only support [MiNETCNServer](https://github.com/FDKPIBC/MiNETServer) now.**
+**Remember that we will only support [MiNET](https://github.com/NiclasOlofsson/MiNET) now.**
 
 # TODO:
  - [ ] Player join or Leave server prompt.
