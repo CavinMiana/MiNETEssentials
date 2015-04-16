@@ -6,11 +6,14 @@ The port version of [Bukkit Essentials](http://dev.bukkit.org/bukkit-plugins/ess
 **Remember that we will only support [MiNET](https://github.com/NiclasOlofsson/MiNET) now.**
 
 # TODO:
- - [ ] Player join or Leave server prompt.
- - [ ] Player made homes, and server warps.
- - [ ] Player kits and first join kits 
- - [ ] Easy player to player teleports, including teleport requests.
- - [ ] Full chat and nickname customisation
+ - [x] Player join or Leave server prompt.
+ - [x] Player made homes, and server warps.
+ - [x] Player kits and first join kits 
+ - [x] Easy player to player teleports, including teleport requests.
+ - [x] Full chat and nickname customisation
+
+
+# this plugin source code have no time to update in Github.plz Forgive me.and it will be update soon
 
 ### Next TODO
 
@@ -20,13 +23,3 @@ The port version of [Bukkit Essentials](http://dev.bukkit.org/bukkit-plugins/ess
  - [ ] Core world protection, allowing you to block explosions, fire spread and other catastrophes! 
 
  
-# Warning 
-this plugin need [MiNETCNServer](https://github.com/FDKPIBC/MiNETServer),or maybe remove ：
-```
-using MiNETCNServer
-```
-and change the code
-```
-CMDColor to Console.write
-```
-thanks use this plugin.
